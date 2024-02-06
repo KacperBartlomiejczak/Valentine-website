@@ -1,7 +1,11 @@
-import "./App.css"
+import Nav from "./components/Nav/Nav"
 
 function App() {
-	return <></>
+	return (
+		<main className='content'>
+			<Nav></Nav>
+		</main>
+	)
 }
 
 export default App

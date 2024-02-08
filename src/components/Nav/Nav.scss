@@ -1,15 +1,16 @@
 @use "../../colors" as *;
 .nav {
-	position: sticky;
+	max-height: 15dvh;
+	width: 100dvw;
+	position: fixed;
 	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	
 	background-color: #fff;
 	overflow-x: clip;
 	z-index: 100;
 	.wrapper {
 		display: grid;
+		align-items: center;
 		grid-template-columns: 1fr 1fr;
 	}
 	&__list {

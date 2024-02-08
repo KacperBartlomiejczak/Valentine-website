@@ -1,0 +1,82 @@
+@use "../../colors" as *;
+
+.our-story {
+	&__content {
+		position: relative;
+		display: grid;
+		grid-template-columns: 2fr 1fr 2fr;
+		grid-template-rows: repeat(7, 1fr);
+		padding: 2em 0;
+		div.dates {
+			width: 100%;
+			display: grid;
+			grid-column: 1/-1;
+			grid-template-rows: 1fr 2fr 6fr;
+			grid-template-columns: 2fr 1fr 2fr;
+			align-items: center;
+			&:nth-child(even) {
+				.date {
+					grid-column: 3/4;
+					justify-self: start;
+				}
+				.date-img,
+				.date-description {
+					grid-column: 3/4;
+				}
+			}
+			&:nth-child(3) {
+				.date-img {
+					object-position: 60% 0%;
+				}
+			}
+		}
+	}
+	.date {
+		display: block;
+		align-self: end;
+		font-size: 1.4rem;
+		justify-self: end;
+		font-weight: normal;
+	}
+
+	.date-img {
+		width: 100%;
+		height: 175px;
+		object-fit: cover;
+		object-position: 50% 50%;
+		grid-column: 1/2;
+		border-radius: 10px;
+	}
+	.date-description {
+		grid-column: 1/2;
+		grid-row: 2/3;
+
+		font-weight: lighter;
+		justify-self: center;
+		align-self: end;
+		text-align: center;
+		font-size: 1.3em;
+		padding-bottom: 0.5em;
+	}
+	.date-line {
+		height: 100%;
+		width: 3px;
+		background-color: $main-color;
+		grid-column: 2/3;
+		grid-row: 1/-1;
+		justify-self: center;
+	}
+	.left {
+		grid-column: 3/4;
+	}
+	.md {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		color: $main-color;
+		grid-column: 2/3;
+		justify-self: center;
+		align-self: start;
+		top: 98%;
+	}
+}

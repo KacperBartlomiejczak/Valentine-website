@@ -1,0 +1,12 @@
+@use "../../colors" as *;
+.why {
+	background-color: $main-color;
+    
+	p {
+		padding-bottom: 2em;
+        font-size: 1.4rem;
+		line-height: 28px;
+        text-align: center;
+        
+	}
+}

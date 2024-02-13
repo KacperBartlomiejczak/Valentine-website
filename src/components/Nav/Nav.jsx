@@ -9,8 +9,14 @@ export default function Nav() {
 
 	const handleClick = () => {
 		setIsClicked(!isClicked)
+		//if the burger is clicked, the body will be hidden
+		if (isClicked) {
+			document.body.style.overflow = "auto"
+		} else {
+			document.body.style.overflow = "hidden"
+		}
 	}
-	
+
 	return (
 		<nav className='nav center-section'>
 			<Wrapper>

@@ -40,7 +40,6 @@
 			animation: slide 12s steps(4) infinite alternate;
 			span {
 				position: relative;
-
 				&::before {
 					content: "";
 					position: absolute;
@@ -67,5 +66,22 @@
 @keyframes slide {
 	100% {
 		transform: translateY(-398%);
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		h1 {
+			font-size: 3rem;
+			&::before {
+				top: 35px;
+			}
+		}
+		.header-text {
+			font-size: 3rem;
+			li {
+				padding: 0 20px;
+			}
+		}
 	}
 }

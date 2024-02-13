@@ -1,5 +1,5 @@
 @use "../../colors" as *;
-.why {
+.how-much {
 	background-color: $main-color;
 	p {
 		padding-bottom: 2em;
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: 768px) {
-	.why {
+	.how-much {
 		p {
 			font-size: 1.8rem;
 			line-height: 35px;

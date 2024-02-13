@@ -11,7 +11,7 @@
 			width: 100%;
 			display: grid;
 			grid-column: 1/-1;
-			grid-template-rows: 1fr 2fr 6fr;
+			grid-template-rows: 1fr 1fr 6fr;
 			grid-template-columns: 2fr 1fr 2fr;
 			align-items: center;
 			&:nth-child(even) {
@@ -33,7 +33,7 @@
 	}
 	.date {
 		display: block;
-		align-self: end;
+		align-self: center;
 		font-size: 1.4rem;
 		justify-self: end;
 		font-weight: normal;
@@ -41,7 +41,7 @@
 
 	.date-img {
 		width: 100%;
-		height: 175px;
+		height: 250px;
 		object-fit: cover;
 		object-position: 50% 50%;
 		grid-column: 1/2;
@@ -77,6 +77,28 @@
 		grid-column: 2/3;
 		justify-self: center;
 		align-self: start;
-		top: 98%;
+		top: 98.5%;
+	}
+}
+
+@media (min-width: 768px) {
+	.our-story {
+		&__content{
+			padding: 3em;
+		}
+		.date {
+			font-size: 1.8rem;
+		}
+		.date-description {
+			font-size: 1.8em;
+		}
+		.date-img {
+			height: 350px;
+		}
+		.md {
+			width: 35px;
+			height: 35px;
+			top: 98.4%;
+		}
 	}
 }

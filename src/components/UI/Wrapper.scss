@@ -1,7 +1,13 @@
 .wrapper {
 	
-
 	max-width: 90dvw;
 	min-width: 80dvw;
 	padding: 1em;
+}
+
+@media(min-width: 1280px){
+	.wrapper{
+		max-width: 110lvh;
+		min-width: 100lvh;
+	}
 }
